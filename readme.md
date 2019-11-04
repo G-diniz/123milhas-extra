@@ -5,7 +5,7 @@ Para gerar o Back-end, criar uma base de dados, ajustar o arquivo .env e utiliza
 php artisan migrate
 
 Rotas:
-/addPizza
+/api/addPizza
     -POST 
     -body[
 	'pizza_name' => '',
@@ -13,7 +13,7 @@ Rotas:
         'flavour' => '',
     ]
 
-/editPizza
+/api/editPizza
     -POST 
     -body[
 	'id' => '',
@@ -22,13 +22,13 @@ Rotas:
         'flavour' => '',
     ]
 
-/removePizza
+/api/removePizza
     -POST 
     -body[
 	'id' => '',
     ]
 
-/createOrder
+/api/createOrder
     -POST 
     -body[
 	'phone' => '',
